@@ -1,0 +1,160 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f2f5, #dfe9f3);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 15px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Container */
+.container {
+    background: white;
+    width: 50%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Title & Subtitle */
+.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1e3c72;
+}
+.subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2a5298;
+}
+select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+select:focus, textarea:focus {
+    border-color: #2a5298;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(42, 82, 152, 0.5);
+}
+textarea {
+    resize: vertical;
+}
+
+/* Buttons */
+.btn {
+    background: linear-gradient(135deg, #4CAF50, #388E3C);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+.btn:hover {
+    background: linear-gradient(135deg, #388E3C, #2E7D32);
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Loading Text */
+.loading {
+    font-size: 1.2rem;
+    color: #888;
+    font-weight: bold;
+    animation: fadeIn 1s infinite alternate;
+}
+@keyframes fadeIn {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+
+/* Response Box */
+.response-box {
+    background: #e3f2fd;
+    padding: 20px;
+    border-left: 6px solid #1e88e5;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.response-box h2 {
+    color: #1e3c72;
+}
+.response-box p {
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background: linear-gradient(135deg, #ff9800, #e65100);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    margin-top: 15px;
+}
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #e65100, #bf360c);
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+footer .developer-name {
+    color: #1e3c72;
+    font-weight: bold;
+}

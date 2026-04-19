@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuineLaw - Legal Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h1>Quine<span style="color: #4CAF50;">Law</span></h1>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h2 class="title">Get Legal Guidance Instantly</h2>
+        <p class="subtitle">Select your country and describe your situation to receive relevant legal advice.</p>
+
+        <!-- Form Section -->
+        <div class="form-group">
+            <label for="country">🌍 Select Country:</label>
+            <select id="country">
+                <option value="">-- Choose Country --</option>
+                <option value="India">India</option>
+                <option value="United States">United States</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="situation">✍️ Describe the Legal Situation:</label>
+            <textarea id="situation" rows="4" placeholder="Explain your issue here..."></textarea>
+        </div>
+
+        <!-- Action Buttons -->
+        <button id="generate" class="btn">🚀 Generate Response</button>
+
+        <p id="loading" class="loading" style="display: none;">🔄 Generating response...</p>
+
+        <!-- Response Section -->
+        <div id="response-container" class="response-box" style="display: none;">
+            <h2>📝 QuineLaw says:</h2>
+            <p id="response"></p>
+            <button id="download" class="btn-secondary">📥 Download as PDF</button>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Developed by <span class="developer-name">Vigneshwaran</span> ❤️</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
